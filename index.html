@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Circles</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/all.min.css" type="text/css" />
+    <script src="fontawesome/all.min.js"></script>
+    <link rel="stylesheet" href="styles/index.css" type="text/css" />
+</head>
+<body>
+    <!-- ############ navbar ############# -->
+    <nav class="container navbar navbar-expand-sm bg-light navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="/index.html"> 
+                <img src="images/social logo.png" alt="site logo">
+                Circles
+            </a>
+        </div>
+        <div class="search-div">
+            <input type="text" class="search-input" placeholder="Search">
+            <span class="fa fa-search search-icon"></span>
+        </div>
+
+        <div class="notifications">
+            <span class="fa fa-bell fa-xl notif"></span>
+            <span class="badge bg-danger" id="badge-icon">4</span>
+        </div>
+        
+        <div class="dropdown dropstart dropdown-menu-start">
+            <img src="images/profile-1.jpg" alt="img pic" class="rounded-pill dropdown-toggle profile-img" data-bs-toggle="dropdown">
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"><hr></li>
+                <li><a class="dropdown-item" href="/login.html">Login</a></li>
+                <li><hr class="dropdown-divider"><hr></li>
+                <li><a class="dropdown-item" href="#">Register</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <!-- ############ navbar ############# -->
+
+
+
+    <!-- ############ MAIN ############# -->
+    <div class="main">
+        <div class="container content">
+
+            <!-- ############ LEFT ############# -->
+            <div class="body leftside">
+                <div class="profile-head p-card">
+                    <img src="images/profile-1.jpg" alt="img pic" class="profile-img" />
+                    <div class="profile-detail">
+                        <span class="p-name">Jane Doe</span>
+                        <span class="p-uname">@janedoe</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-menu p-card">
+                    <div class="menu-item">
+                        <span class="icon fa fa-home"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Home</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="icon fa fa-compass"></span>
+                        <div class="link-item">
+                            <a href="/explore.html" class="a-link">Explore</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="icon fa fa-heart"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Likes</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="icon fa fa-envelope"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Messages</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <span class="icon fa fa-users"></span>
+                        <div class="link-item">
+                            <a href="friends.html" class="a-link">Friends</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="icon fa fa-comment"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Request</a>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <span class="icon fa fa-palette"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Themes</a>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-bs-toggle="offcanvas" data-bs-target="#setting-canva">
+                        <span class="icon fa fa-cog"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Settings</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary">POST</button>
+            </div>
+            <!-- ############ MAIN ############# -->
+
+
+            <!-- ############ MIDDLE ############# -->
+            <div class="body middle">
+                <div class="stories p-card">
+                    <div class="story">
+                        <img src="images/story-1.jpg" alt="story img" class="story-img" />
+                        <div class="story-info">
+                            <span class="s-name">@janedoe</span>
+                            <span class="s-date text-muted">3 days ago</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="images/story-2.jpg" alt="story img" class="story-img" />
+                        <div class="story-info">
+                            <span class="s-name">@amber</span>
+                            <span class="s-date text-muted">a day ago</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="images/story-3.jpg" alt="story img" class="story-img" />
+                        <div class="story-info">
+                            <span class="s-name">@ayodeji</span>
+                            <span class="s-date text-muted">5 mins ago</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="images/story-4.jpg" alt="story img" class="story-img" />
+                        <div class="story-info">
+                            <span class="s-name">@Hassam</span>
+                            <span class="s-date text-muted">19 min ago</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="images/story-5.jpg" alt="story img" class="story-img" />
+                        <div class="story-info">
+                            <span class="s-name">@dave</span>
+                            <span class="s-date text-muted">3 hrs ago</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="images/story-6.jpg" alt="story img" class="story-img" />
+                        <div class="story-info">
+                            <span class="s-name">@alice</span>
+                            <span class="s-date text-muted">2 hrs ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="create-post p-card">
+                    <div class="profile-pic">
+                        <img src="images/profile-1.jpg" alt="pic" class="avatarImg">
+                        <span class="text-muted">@janedoe</span>
+                    </div>
+                    <input type="text" placeholder="What's on your mind?" class="post-input" />
+                    <button type="button" class="btn btn-primary">Post</button>
+                </div>
+
+                <div class="feeds">
+                    <div class="feed p-card">
+                        <div class="feed-header">
+                            <img src="images/profile-1.jpg" alt="pic" class="avatarImg">
+                            <span class="text-muted">@janedoe</span>
+                            <span class="feed-date text-muted">3 days ago</span>
+                        </div>
+                        <div class="feed-content">
+                            <img src="images/feed-1.jpg" alt="post img" class="post-img" data-bs-toggle="modal" data-bs-target="#post-img-modal"/>
+                            <p data-bs-toggle="modal" data-bs-target="#myModal">
+                                🌍 Ready for your next adventure? 🌟 Discover hidden gems and breathtaking landscapes that are just waiting to be
+                                explored. From serene beaches to towering mountains, the world is full of wonders! Share your favorite travel
+                                destinations and let’s inspire each other to explore new horizons. 🏞️✨ #TravelGoals #Wanderlust #ExploreTheWorld
+                            </p>
+                        </div>
+                        <div class="feed-actions">
+                            <span class="like-btn fa fa-heart"></span> 12
+                            <span class="comment-btn fa fa-comments"></span> 24
+                        </div>
+                    </div>
+
+                    <div class="feed p-card">
+                        <div class="feed-header">
+                            <img src="images/profile-2.jpg" alt="pic" class="avatarImg">
+                            <span class="text-muted">@janedoe</span>
+                            <span class="feed-date text-muted">3 days ago</span>
+                        </div>
+                        <div class="feed-content">
+                            <img src="images/feed-2.jpg" alt="post img" class="post-img" data-bs-toggle="modal" data-bs-target="#post-img-modal" />
+                            <p data-bs-toggle="modal" data-bs-target="#myModal">
+                                💪 Start your week with a positive mindset! Remember, every challenge is an opportunity in disguise. Embrace the
+                                obstacles and let them fuel your drive to succeed. Stay focused, stay determined, and let your dreams lead the way.
+                                You’ve got this! 🌟🚀 #MotivationMonday #BelieveInYourself #PositiveVibes
+                            </p>
+                        </div>
+                        <div class="feed-actions">
+                            <span class="like-btn fa fa-heart"></span> 12
+                            <span class="comment-btn fa fa-comments"></span> 24
+                        </div>
+                    </div>
+
+                    <div class="feed p-card">
+                        <div class="feed-header">
+                            <img src="images/profile-3.jpg" alt="pic" class="avatarImg">
+                            <span class="text-muted">@janedoe</span>
+                            <span class="feed-date text-muted">3 days ago</span>
+                        </div>
+                        <div class="feed-content">
+                            <img src="images/feed-3.jpg" alt="post img" class="post-img" data-bs-toggle="modal" data-bs-target="#post-img-modal" />
+                            <p data-bs-toggle="modal" data-bs-target="#Mymodal">
+                                🥗 Looking to boost your energy and feel great? Try adding more colorful fruits and veggies to your diet! They’re packed
+                                with essential nutrients and antioxidants that support overall health. 🌈💚 Make your plate vibrant and delicious!
+                                What’s your favorite healthy meal? 🍎🥦 #HealthyEating #NutritionTips #FeelGoodFood
+                            </p>
+                        </div>
+                        <div class="feed-actions">
+                            <span class="like-btn fa fa-heart"></span> 12
+                            <span class="comment-btn fa fa-comments"></span> 24
+                        </div>
+                    </div>
+
+                    <div class="feed p-card">
+                        <div class="feed-header">
+                            <img src="images/profile-1.jpg" alt="pic" class="avatarImg">
+                            <span class="text-muted">@janedoe</span>
+                            <span class="feed-date text-muted">3 days ago</span>
+                        </div>
+                        <div class="feed-content">
+                            <img src="images/feed-4.jpg" alt="post img" class="post-img" data-bs-toggle="modal" data-bs-target="#post-img-modal" />
+                            <p data-bs-toggle="modal" data-bs-target="#Mymodal">
+                                🎉 Happy Friday, everyone! Got any exciting plans for the weekend? Whether it’s a relaxing day at the park, a movie
+                                marathon, or trying a new recipe, make the most of your time off. Share your weekend goals and let’s make this one
+                                amazing! 🌟🍿 #WeekendVibes #FridayFeeling #FunTimes
+                            </p>
+                        </div>
+                        <div class="feed-actions">
+                            <span class="like-btn fa fa-heart"></span> 12
+                            <span class="comment-btn fa fa-comments"></span> 24
+                        </div>
+                    </div>
+
+                    <div class="feed p-card">
+                        <div class="feed-header">
+                            <img src="images/profile-3.jpg" alt="pic" class="avatarImg">
+                            <span class="text-muted">@janedoe</span>
+                            <span class="feed-date text-muted">3 days ago</span>
+                        </div>
+                        <div class="feed-content">
+                            <img src="images/feed-5.jpg" alt="post img" class="post-img" data-bs-toggle="modal"  data-bs-target="#post-img-modal" />
+                            <p data-bs-toggle="modal" data-bs-target="#Mymodal">
+                                📚 Looking for a new read? Check out [Book Title] by [Author]. It’s a captivating story that will keep you on the edge
+                                of your seat! Dive into a world of adventure, mystery, or romance and get lost in its pages. What’s your current read?
+                                📖❤️ #BookRecommendation #ReadingList #BookLovers
+                            </p>
+                        </div>
+                        <div class="feed-actions">
+                            <span class="like-btn fa fa-heart"></span> 12
+                            <span class="comment-btn fa fa-comments"></span> 24
+                        </div>
+                    </div>
+
+                    <div class="feed p-card">
+                        <div class="feed-header">
+                            <img src="images/profile-7.jpg" alt="pic" class="avatarImg">
+                            <span class="text-muted">@janedoe</span>
+                            <span class="feed-date text-muted">3 days ago</span>
+                        </div>
+                        <div class="feed-content">
+                            <img src="images/feed-6.jpg" alt="post img" class="post-img" data-bs-toggle="modal" data-bs-target="#post-img-modal" />
+                            <p data-bs-toggle="modal" data-bs-target="#Mymodal">
+                                💡 Tech Tip Tuesday is here! Did you know that regularly updating your software helps protect against security threats
+                                and bugs? Keep your devices running smoothly and securely by checking for updates. Stay safe and tech-savvy! 📲🔒
+                                #TechTipTuesday #StaySecure #DigitalSafety
+                            </p>
+                        </div>
+                        <div class="feed-actions">
+                            <span class="like-btn fa fa-heart"></span> 12
+                            <span class="comment-btn fa fa-comments"></span> 24
+                        </div>
+                    </div>
+
+                    <div class="feed p-card">
+                        <div class="feed-header">
+                            <img src="images/profile-3.jpg" alt="pic" class="avatarImg">
+                            <span class="text-muted">@janedoe</span>
+                            <span class="feed-date text-muted">3 days ago</span>
+                        </div>
+                        <div class="feed-content">
+                            <img src="images/feed-7.jpg" alt="post img" class="post-img" data-bs-toggle="modal" data-bs-target="#post-img-modal" />
+                            <p data-bs-toggle="modal" data-bs-target="#Mymodal">
+                                🏋️‍♂️ Ready to crush your fitness goals? Whether it’s a morning run, a home workout, or a gym session, every bit of
+                                effort counts! Push yourself, stay consistent, and celebrate your progress. Share your workout achievements and let’s
+                                motivate each other to stay active! 💪🚴‍♀️ #FitnessGoals #WorkoutMotivation #ActiveLifestyle
+                            </p>
+                        </div>
+                        <div class="feed-actions">
+                            <span class="like-btn fa fa-heart"></span> 12
+                            <span class="comment-btn fa fa-comments"></span> 24
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ############ MIDDLE ############# -->
+
+
+
+            <!-- ############ RIGHT ############# -->
+            <div class="body rightside">
+                <div class="p-card msg-div">
+                    <div class="msg-header">
+                        <span class="fa fa-bolt"> </span> 
+                        <span>Activities</span>
+                    </div>
+                    
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#messages">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#requests">Requests</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container active" id="messages">
+                            <h5 class="text-muted">Your messages</h5>
+                            <div class="msg-profile">
+                                <img src="images/profile-11.jpg" alt="" class="avatarImg">
+                                <div class="msg-content">
+                                    <span>@Isabella</span>
+                                    <div class="text-muted">
+                                        Hello how are you doing today ?
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="msg-profile">
+                                <img src="images/profile-12.jpg" alt="" class="avatarImg">
+                                <div class="msg-content">
+                                    <span>@Harry-p</span>
+                                    <div class="text-muted">
+                                        Just saying hi!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="msg-profile">
+                                <img src="images/profile-13.jpg" alt="" class="avatarImg">
+                                <div class="msg-content">
+                                    <span>@Bekky</span>
+                                    <div class="text-muted">
+                                        I miss you 😀😀
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="msg-profile">
+                                <img src="images/profile-14.jpg" alt="" class="avatarImg">
+                                <div class="msg-content">
+                                    <span>@Peter</span>
+                                    <div class="text-muted">
+                                        Bored like hell!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane container fade" id="requests">
+                            <h5 class="text-muted">Friends requests</h5>
+
+                            <div class="request-div">
+                                <div class="req-profile">
+                                    <img src="images/profile-17.jpg" alt="" class="avatarImg">
+                                    <span>@joeboy</span>
+                                </div>
+
+                                <div class="req-action">
+                                    <button type="button" class="btn btn-primary">Accept</button>
+
+                                    <button type="button" class="btn btn-danger">Decline</button>
+                                </div>
+                            </div>
+                            
+                            <div class="request-div">
+                                <div class="req-profile">
+                                    <img src="images/profile-16.jpg" alt="" class="avatarImg">
+                                    <span>@Kunle</span>
+                                </div>
+                            
+                                <div class="req-action">
+                                    <button type="button" class="btn btn-primary">Accept</button>
+                            
+                                    <button type="button" class="btn btn-danger">Decline</button>
+                                </div>
+                            </div>
+
+                            <div class="request-div">
+                                <div class="req-profile">
+                                    <img src="images/profile-19.jpg" alt="" class="avatarImg">
+                                    <span>@D-trump</span>
+                                </div>
+
+                                <div class="req-action">
+                                    <button type="button" class="btn btn-primary">Accept</button>
+
+                                    <button type="button" class="btn btn-danger">Decline</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- FRIENDS SECTION -->
+                <div class="p-card msg-div friend-div">
+                    <div class="msg-header">
+                        <span class="fa fa-users"> </span>
+                        <span>Friends</span>
+                    </div>
+
+                    <div class="friend-search post-input">
+                        <span class="fa fa-search"></span>
+                        <input type="text" placeholder="Search" class="post-input" />
+                    </div>
+
+                    <div class="msg-profile">
+                        <img src="images/profile-17.jpg" alt="" class="avatarImg">
+                        <div class="msg-content">
+                            <span>@big-sista</span>
+                            <div class="text-muted"> 11 mutual friends </div>
+                        </div>
+                    </div>
+
+                    <div class="msg-profile">
+                        <img src="images/profile-18.jpg" alt="" class="avatarImg">
+                        <div class="msg-content">
+                            <span>@eze-martin</span>
+                            <div class="text-muted"> 10 mutual friends </div>
+                        </div>
+                    </div>
+
+                    <div class="msg-profile">
+                        <img src="images/profile-19.jpg" alt="" class="avatarImg">
+                        <div class="msg-content">
+                            <span>@akin bola</span>
+                            <div class="text-muted"> 7 mutual friends </div>
+                        </div>
+                    </div>
+
+                    <div class="msg-profile">
+                        <img src="images/profile-20.jpg" alt="" class="avatarImg">
+                        <div class="msg-content">
+                            <span>@madonna</span>
+                            <div class="text-muted"> 4 mutual friends </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- ############ RIGHT ############# -->
+        </div>
+    </div>
+    <!-- ############ MAIN ############# -->
+     
+    
+    <div class="offcanvas offcanvas-end" id="setting-canva">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Settings</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Some text lorem ipsum.</p>
+            <p>Some text lorem ipsum.</p>
+            <button class="btn btn-secondary" type="button">A Button</button>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="post-img-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Viweing post</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body">
+                <div class="feed-content">
+                    <img src="images/feed-1.jpg" alt="post img" class="post-img" />
+                </div>
+                </div>
+
+
+</body>
+</html>

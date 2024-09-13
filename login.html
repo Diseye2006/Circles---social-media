@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/all.min.css" type="text/css" />
+    <script src="fontawesome/all.min.js"></script>
+    <link rel="stylesheet" href="styles/index.css" type="text/css" />
+</head>
+
+<body>
+    <!-- ############ navbar ############# -->
+    <nav class="container navbar navbar-expand-sm bg-light navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="/index.html">
+                <img src="images/social logo.png" alt="site logo">
+                Circles
+            </a>
+        </div>
+        <div class="search-div">
+            <input type="text" class="search-input" placeholder="Search">
+            <span class="fa fa-search search-icon"></span>
+        </div>
+
+        <div class="notifications">
+            <span class="fa fa-bell fa-xl notif"></span>
+            <span class="badge bg-danger" id="badge-icon">4</span>
+        </div>
+
+        <div class="dropdown">
+            <img src="images/profile-1.jpg" alt="img pic" class="rounded-pill dropdown-toggle profile-img"
+                data-bs-toggle="dropdown">
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ############ navbar ############# -->
+
+
+    <!-- ############ MAIN ############# -->
+    <div class="main">
+        <div class="container content">
+
+            <!-- ############ LEFT ############# -->
+            <!-- <div class="body leftside">
+                <div class="profile-head p-card">
+                    <img src="images/profile-1.jpg" alt="img pic" class="profile-img" />
+                    <div class="profile-detail">
+                        <span class="p-name">Jane Doe</span>
+                        <span class="p-uname">@janedoe</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-menu p-card">
+                    <div class="menu-item">
+                        <span class="icon fa fa-home"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Home</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="icon fa fa-compass"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Explore</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="icon fa fa-heart"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Likes</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="icon fa fa-envelope"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Messages</a>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <span class="icon fa fa-users"></span>
+                        <div class="link-item">
+                            <a href="friends.html" class="a-link">Friends</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="icon fa fa-comment"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Request</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="icon fa fa-palette"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Themes</a>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-bs-toggle="offcanvas" data-bs-target="#setting-canvas">
+                        <span class="icon fa fa-cog"></span>
+                        <div class="link-item">
+                            <a href="#" class="a-link">Settings</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+            <!-- ############ MAIN ############# -->
+
+
+            <!-- ############ MIDDLE ############# -->
+            <div class="body middle " style="width: 100%;">
+
+                
+                <div class="row login-form">
+                    <div class=" p-card col-lg-6 offset-3" style="border: thin dotted #666;">
+
+                        <form action="#"></form>
+                            <h3 class="text-center">Sign in</h3>
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pwd" class="form-label">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                            </div>
+                            <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                </label>
+                                <a href="#" class="" style="float: right;">Sign up</a>
+                            </div>
+                            <a href="/signin.html">
+                            <button type="submit" class="btn btn-primary" style="width:100%">Login</button>
+                            </a>
+                        </form>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
